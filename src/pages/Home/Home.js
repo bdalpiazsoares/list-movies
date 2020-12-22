@@ -73,7 +73,7 @@ function Home() {
   }
 
   return (
-    <div className='container-total'>
+    <>
       <SearchBar
         onChange={setTextSearch}
         onClick={handleGetListApi}
@@ -91,7 +91,7 @@ function Home() {
           />
         </div>
       )}
-    </div>
+    </>
   );
 }
 

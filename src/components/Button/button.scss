@@ -1,0 +1,23 @@
+@import '../../styles/base-colors.scss';
+
+@mixin buttonDefault($fontSize, $padding) {
+  margin-top: 2em;
+  font-size: $fontSize;
+  text-transform: uppercase;
+  background-color: $color-red;
+  outline: none;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: $padding;
+  font-weight: bold;
+
+  &:hover {
+    opacity: 0.9;
+    transition: 0.4s;
+  }
+}
+
+.button-style-small { @include buttonDefault(10px, 4px 8px)}
+.button-style-big { @include buttonDefault(16px, 8px 10px)}

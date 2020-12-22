@@ -1,0 +1,28 @@
+.container-movie-list {
+  display: flex;
+  justify-content: center;
+
+  .container-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0px;
+    list-style: none;
+    padding-left: 0;
+  
+    @media (max-width: 1160px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    @media (max-width: 1070px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
